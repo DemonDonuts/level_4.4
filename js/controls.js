@@ -23,6 +23,7 @@ function press(e)
 	if(e.keyCode == 83)
 	{
 		s = true;
+		dropping = true;
 	}
 	if(e.keyCode == 68)
 	{
@@ -45,7 +46,8 @@ function release(e)
 	}
 	if(e.keyCode == 83)
 	{
-		s = false;
+		s = false;w
+		dropping = false;
 	}
 	if(e.keyCode == 68)
 	{

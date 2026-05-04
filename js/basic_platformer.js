@@ -5,6 +5,7 @@ var context;
 var timer;
 var interval;
 var player;
+var dropping = false; //mario fall thru platofmr thingy
 
 
 	canvas = document.getElementById("canvas");
@@ -95,7 +96,7 @@ function animate()
 	
 	
 
-	while(platform1.hitTestPoint(player.bottom()) && player.vy >=0 )
+	while(platform1.hitTestPoint(player.bottom()) && player.vy >=0  && !dropping)
 	{
 		player.canJump = true;
 		player.y--;
